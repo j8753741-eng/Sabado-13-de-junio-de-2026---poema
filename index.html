@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eres el Suspiro Eterno de Mi Alma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        min-height:100vh;
+        font-family:'Cormorant Garamond', serif;
+        background:
+            radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 30%),
+            linear-gradient(180deg,#070713 0%, #10172d 40%, #1b1232 100%);
+        color:#fff9f8;
+        overflow-x:hidden;
+        position:relative;
+        padding:40px 20px;
+    }
+
+    /* Estrellas */
+    body::before{
+        content:"";
+        position:fixed;
+        inset:0;
+        background-image:
+        radial-gradient(2px 2px at 20% 20%, rgba(255,255,255,.9), transparent),
+        radial-gradient(2px 2px at 80% 30%, rgba(255,255,255,.8), transparent),
+        radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,.8), transparent),
+        radial-gradient(2px 2px at 35% 85%, rgba(255,255,255,.9), transparent),
+        radial-gradient(1px 1px at 90% 60%, rgba(255,255,255,.7), transparent),
+        radial-gradient(2px 2px at 10% 55%, rgba(255,255,255,.8), transparent);
+        animation: brillo 6s ease-in-out infinite alternate;
+        pointer-events:none;
+    }
+
+    @keyframes brillo{
+        from{opacity:.5;}
+        to{opacity:1;}
+    }
+
+    .container{
+        max-width:900px;
+        margin:auto;
+        position:relative;
+        z-index:2;
+    }
+
+    .poema{
+        background:rgba(255,255,255,0.08);
+        backdrop-filter:blur(18px);
+        border:1px solid rgba(255,255,255,0.15);
+        border-radius:35px;
+        padding:60px 50px;
+        box-shadow:
+            0 0 40px rgba(255,182,193,.15),
+            0 0 80px rgba(255,255,255,.05);
+        position:relative;
+        overflow:hidden;
+    }
+
+    .poema::before{
+        content:"❦";
+        position:absolute;
+        top:25px;
+        left:30px;
+        font-size:45px;
+        color:rgba(255,210,220,.5);
+    }
+
+    .poema::after{
+        content:"❦";
+        position:absolute;
+        bottom:25px;
+        right:30px;
+        font-size:45px;
+        color:rgba(255,210,220,.5);
+        transform:rotate(180deg);
+    }
+
+    .titulo{
+        font-family:'Great Vibes', cursive;
+        text-align:center;
+        font-size:4.5rem;
+        color:#ffd8e4;
+        margin-bottom:15px;
+        text-shadow:
+            0 0 20px rgba(255,192,203,.5),
+            0 0 40px rgba(255,192,203,.3);
+    }
+
+    .fecha{
+        text-align:center;
+        letter-spacing:3px;
+        font-size:1rem;
+        color:#e7d9f8;
+        margin-bottom:45px;
+        text-transform:uppercase;
+    }
+
+    .separador{
+        width:120px;
+        height:2px;
+        background:linear-gradient(to right,
+        transparent,
+        rgba(255,220,230,.9),
+        transparent);
+        margin:0 auto 40px;
+    }
+
+    .contenido{
+        font-size:1.7rem;
+        line-height:2.2;
+        color:#fffafc;
+    }
+
+    .contenido p{
+        margin-bottom:30px;
+        text-align:center;
+    }
+
+    .destacado{
+        color:#ffd6e6;
+        font-style:italic;
+    }
+
+    .promesa{
+        text-align:center;
+        margin-top:50px;
+        padding:35px;
+        border-radius:25px;
+        background:rgba(255,255,255,0.06);
+        border:1px solid rgba(255,255,255,0.12);
+    }
+
+    .promesa span{
+        display:block;
+        font-family:'Great Vibes', cursive;
+        font-size:3rem;
+        color:#ffd7e5;
+        margin-top:20px;
+        text-shadow:0 0 20px rgba(255,182,193,.5);
+    }
+
+    .corazon{
+        text-align:center;
+        font-size:2rem;
+        margin:40px 0;
+        animation:latido 1.8s infinite;
+    }
+
+    @keyframes latido{
+        0%,100%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(1.15);
+        }
+    }
+
+    @media(max-width:768px){
+
+        .poema{
+            padding:45px 28px;
+        }
+
+        .titulo{
+            font-size:3.2rem;
+        }
+
+        .contenido{
+            font-size:1.45rem;
+            line-height:2;
+        }
+
+        .promesa span{
+            font-size:2.4rem;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="poema">
+
+        <h1 class="titulo">
+            Eres el Suspiro Eterno de Mi Alma
+        </h1>
+
+        <p class="fecha">
+            Sábado, 13 de junio de 2026
+        </p>
+
+        <div class="separador"></div>
+
+        <div class="contenido">
+
+            <p>
+                Esta noche de sábado, 13 de junio de 2026,
+            </p>
+
+            <p>
+                cuando el cielo se ha vestido de oscuridad para resaltar el brillo de las estrellas,<br>
+                cuando el mundo parece guardar silencio para escuchar únicamente la voz del amor,<br>
+                mi corazón vuelve a encontrarte en el mismo lugar donde siempre habitas:<br>
+                en cada uno de mis pensamientos,<br>
+                en cada uno de mis sueños,<br>
+                y en cada uno de los latidos que llevan tu nombre grabado para siempre.
+            </p>
+
+            <p class="destacado">
+                Y es que amarte se ha convertido en mi forma favorita de existir.
+            </p>
+
+            <p>
+                No sé cómo explicarle al universo que tus abrazos tienen el poder de calmar todas mis tormentas,<br>
+                que tu sonrisa ilumina rincones de mi alma que ni siquiera yo conocía,<br>
+                que tus ojos son el refugio donde deseo perderme cada noche y despertar cada mañana.
+            </p>
+
+            <p>
+                Eres la coincidencia más hermosa que el destino escribió para mí.<br>
+                El milagro que llegó sin avisar y convirtió mis días comunes en historias extraordinarias.<br>
+                La razón por la que ahora entiendo que el amor verdadero no es perfecto,<br>
+                pero sí inmensamente valiente:<br>
+                porque permanece,<br>
+                porque lucha,<br>
+                porque perdona,<br>
+                porque vuelve a elegir a la misma persona incluso después de las dificultades.
+            </p>
+
+            <p class="destacado">
+                Y yo te elijo.
+            </p>
+
+            <p>
+                Te elijo en las noches tranquilas y en las tormentas inesperadas.<br>
+                Te elijo cuando el mundo parece ir demasiado rápido y cuando el tiempo parece detenerse.<br>
+                Te elijo en tus sonrisas y en tus silencios.<br>
+                Te elijo con tus virtudes, con tus defectos y con cada pequeño detalle que te hace ser tú.
+            </p>
+
+            <p>
+                Porque eres la mujer que logró enseñarme que amar es admirar incluso aquello que nadie más nota.<br>
+                Es memorizar la forma en que pronuncias ciertas palabras.<br>
+                Es sonreír al recordar tus ocurrencias.<br>
+                Es extrañarte aunque hayan pasado apenas unos minutos desde la última vez que hablamos.
+            </p>
+
+            <div class="corazon">🤍 ✧ 🤍</div>
+
+            <p>
+                Mi amor hermoso,
+            </p>
+
+            <p>
+                si alguna vez pudieras entrar en mi corazón,<br>
+                descubrirías que cada rincón lleva tu nombre.<br>
+                Verías que mis anhelos más sinceros tienen tu rostro.<br>
+                Escucharías que cada uno de mis sueños pronuncia la misma oración:
+            </p>
+
+            <p class="destacado">
+                "Que la vida me permita seguir amándola."
+            </p>
+
+            <p>
+                Porque no deseo riquezas imposibles ni promesas vacías.<br>
+                Mi mayor deseo es construir recuerdos contigo.<br>
+                Tomarte de la mano mientras pasan los años.<br>
+                Celebrar nuestras victorias.<br>
+                Superar juntos cada dificultad.<br>
+                Mirarte algún día y descubrir que, incluso después de tanto tiempo,
+                sigo enamorándome de ti con la misma intensidad del primer instante.
+            </p>
+
+            <p>
+                Y si tuviera que vivir mil vidas,<br>
+                te buscaría en cada una de ellas.
+            </p>
+
+            <p>
+                Te reconocería entre millones de personas.<br>
+                Volvería a enamorarme de tu esencia,<br>
+                de tu manera de cuidar,<br>
+                de tu ternura,<br>
+                de tu fuerza,<br>
+                y de esa capacidad tan tuya de convertirse en hogar sin necesidad de paredes.
+            </p>
+
+            <p class="destacado">
+                Porque tú eres mi hogar.
+            </p>
+
+            <p>
+                Eres el beso que calma mis miedos.<br>
+                La caricia que reconstruye mis esperanzas.<br>
+                La melodía que acompaña mis noches más silenciosas.<br>
+                El sueño hermoso del que nunca quisiera despertar.
+            </p>
+
+            <p>
+                Gracias por existir.<br>
+                Gracias por permitirme amarte.<br>
+                Gracias por llenar de luz mis días y de estrellas mis noches.
+            </p>
+
+            <p>
+                Y mientras el cielo de este sábado continúa observándonos desde la distancia,<br>
+                quiero que recuerdes algo que jamás cambiará:
+            </p>
+
+            <p>
+                No importa cuántas veces el mundo gire,<br>
+                cuántas estaciones pasen,<br>
+                cuántos desafíos aparezcan en nuestro camino.
+            </p>
+
+            <p class="destacado">
+                Mi corazón seguirá encontrando el suyo en el tuyo.
+            </p>
+
+            <p>
+                Porque te amo con la dulzura de las promesas sinceras,<br>
+                con la intensidad de los amores que dejan huella,<br>
+                con la pasión de quien ha encontrado a la persona que siempre soñó.
+            </p>
+
+            <p>
+                Y esta noche, bajo el infinito manto de estrellas del 13 de junio de 2026,
+            </p>
+
+            <p class="destacado">
+                vuelvo a enamorarme de ti.<br>
+                Vuelvo a elegirte.
+            </p>
+
+        </div>
+
+        <div class="promesa">
+
+            Vuelvo a prometerte que, mientras exista un latido dentro de mi pecho,
+            habrá un amor inmenso pronunciando tu nombre en silencio.
+
+            <span>
+                Y ese amor, mi princesa hermosa,<br>
+                será siempre,<br>
+                y para siempre,<br>
+                tuyo.
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+  </html>
